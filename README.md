@@ -1,5 +1,8 @@
 # 🛡️ Bot Validador de Acesso Acadêmico
 
+### 🔗 [Acesse o Bot aqui!](https://t.me/portariaavauninterbot)
+*(Substitua o link acima pelo link real do seu bot)*
+
 Sistema de segurança desenvolvido em Python para automatizar a entrada de estudantes em comunidades digitais. O bot utiliza uma camada de autenticação via e-mail institucional (2FA) para garantir a integridade do grupo.
 
 ## 📋 Como o sistema funciona
@@ -9,16 +12,16 @@ Sistema de segurança desenvolvido em Python para automatizar a entrada de estud
 4. **Liberação de Acesso:** Após a inserção correta do código no Telegram, o link de convite do grupo é enviado.
 
 ## 🛠️ Detalhes Técnicos e Segurança
-- **Sanitização de Input:** Implementação de filtro rígido que aceita apenas caracteres numéricos, prevenindo entradas inválidas ou maliciosas.
-- **Processamento Assíncrono:** Uso da biblioteca `asyncio` para garantir que o envio de e-mails não bloqueie o atendimento de outros usuários.
-- **Gestão de Estado:** Lógica de reinicialização automática — se o usuário enviar um novo RU no meio do processo, o sistema limpa o buffer anterior e recomeça o fluxo.
+- **Sanitização de Input:** Filtro rígido que aceita apenas dígitos numéricos, prevenindo erros de processamento.
+- **Processamento Assíncrono:** Uso de `asyncio` para garantir que o envio de e-mails não bloqueie o atendimento de outros usuários.
+- **Gestão de Estado:** Lógica de reinicialização automática (Idempotência) ao reenviar um RU.
 
 ## ⚙️ Configuração (Variáveis Plaintext)
-Para rodar este serviço localmente, é necessário configurar as seguintes variáveis no cabeçalho do código:
+Para rodar este serviço localmente, configure:
 - `TOKEN_TELEGRAM`: Chave da API do bot.
-- `EMAIL_REMETENTE`: Endereço de e-mail para disparo dos códigos.
-- `SENHA_EMAIL`: Senha de App configurada no provedor de e-mail.
-- `LINK_WHATSAPP`: Destino final do usuário após validação.
+- `EMAIL_REMETENTE`: E-mail para disparo dos códigos.
+- `SENHA_EMAIL`: Senha de App do provedor.
+- `LINK_WHATSAPP`: Destino final após validação.
 
 ---
-*Desenvolvido como projeto prático para o curso de Engenharia de Software.*
+*Projeto desenvolvido para fins acadêmicos e portfólio de Engenharia de Software.*

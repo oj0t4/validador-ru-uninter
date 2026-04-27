@@ -1,7 +1,6 @@
 # 🛡️ Bot Validador de Acesso Acadêmico
 
 ### 🔗 [Acesse o Bot aqui!](https://t.me/portariaavauninterbot)
-*(Substitua o link acima pelo link real do seu bot)*
 
 Sistema de segurança desenvolvido em Python para automatizar a entrada de estudantes em comunidades digitais. O bot utiliza uma camada de autenticação via e-mail institucional (2FA) para garantir a integridade do grupo.
 
